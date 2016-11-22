@@ -4,16 +4,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("p:first").dblclick(function(){
-        $(this).hide();
+    $("#b1").click(function(){
+        $("p:first").hide();
     });
-	$("#p2").dblclick(function(){
-        $(this).hide();
+	$("#b2").click(function(){
+        $("#p2").hide();
     });
-	$(".p3").dblclick(function(){
-        $(this).hide();
+	$("#b3").click(function(){
+        $(".p3").hide();
     });
-	
+	$("#b4").click(function(){
+        $("p").show();
+    });
 });
 </script>
 </head>
@@ -22,6 +24,11 @@ $(document).ready(function(){
 <p>Hide Paragraph 1</p>
 <p id="p2">Hide Paragraph 2</p>
 <p class="p3">Hide Paragraph 3</p>
+
+<button id="b1">Hide 1</button>
+<button id="b2">Hide 2</button>
+<button id="b3">Hide 3</button><br>
+<button id="b4">Show All</button>
 
 </body>
 </html>
