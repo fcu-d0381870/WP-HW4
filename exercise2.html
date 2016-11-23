@@ -5,30 +5,32 @@
 <script>
 $(document).ready(function(){
     $("#b1").click(function(){
-        $("p:first").hide();
+        $("p:first").hide(100);
     });
 	$("#b2").click(function(){
-        $("#p2").hide();
+        $("#p2").hide(1000);
     });
 	$("#b3").click(function(){
-        $(".p3").hide();
+        $(".p3").hide(2000);
     });
 	$("#b4").click(function(){
-        $("p").show();
+        $("p").show(500);
     });
 });
 </script>
 </head>
 <body>
 
-<p>Hide Paragraph 1</p>
-<p id="p2">Hide Paragraph 2</p>
-<p class="p3">Hide Paragraph 3</p>
-
 <button id="b1">Hide 1</button>
 <button id="b2">Hide 2</button>
 <button id="b3">Hide 3</button><br>
 <button id="b4">Show All</button>
+
+<p>Hide Paragraph 1</p>
+<p id="p2">Hide Paragraph 2</p>
+<p class="p3">Hide Paragraph 3</p>
+
+
 
 </body>
 </html>
