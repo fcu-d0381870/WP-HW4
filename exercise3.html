@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+        #pic{
+            position: relative;
+			height: 300px;
+			width: 300px;
+        }
+    </style>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            $("#button").click(function() {
+				$("#pic").animate({
+					height: 'toggle'
+				});
+			});
+        });
+    </script>
+</head>
+
+<body>
+	
+    <button id="button">Start</button><br>
+	<img src="ex3.png" id="pic" height="500"></body>
+</body>
+</html>
